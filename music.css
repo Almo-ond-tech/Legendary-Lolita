@@ -1,0 +1,273 @@
+
+body {
+ background-image: url("imgs/web_imgs/hearts-and-clover-ver.jpg");
+ background-color: #acdb96;
+ background-size: 30vmin;
+ font-family: Trebuchet MS;
+ color: rgb(235, 203, 203);
+ text-align: center;
+}
+/* header starts here */
+
+nav{
+    background-color: rgb(167, 219, 142);
+    /* height: 30vh; */
+    border-radius: 50px;
+    padding: 0px 10px 0.5px 10px;
+    height: fit-content;
+    width: 90%;
+    position: relative;
+    left: 4%;
+    /* font-size: 2.5vmin; */
+}
+#home{
+
+    text-decoration: none;
+    color: #e9a5b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 60%;
+    position: relative;
+    background-color:white;
+    border-radius: 50px;
+    padding: 0px 0px 0px 0px;
+    top: 8px;
+    left: 20%;
+    
+}
+
+img{
+     border-radius: 75px;
+}
+
+.clover{
+    width: 5em;
+    height: 5em ;
+    position: relative;
+    margin: -70px -60px -40px 0px;
+    left: -25px;
+    top: 20px;
+    /* background-color: rgba(0, 0, 0, 0.219) ; */
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1em solid white ;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#a7d8a4;
+    height: 5em;
+    list-style-type: none;
+    border-radius: 50px;
+
+}
+
+.sub-head {
+    color: #ffffff;
+    background-color:rgb(247, 245, 125);
+    height: fit-content;
+    width: 12em;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.6em;
+}
+/* header ends here */
+
+/* main starts here */
+
+main{
+    font-size: 3vmin;
+    color: rgb(240, 212, 212);
+    background-color: #439e199f;
+    border-radius: 30px;
+    margin: 10px 50px 0px 50px;
+    text-align: center;
+    padding: 10px 20px 10px 20px ;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #18643eb0;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+#artist-section{
+    background-color: #f5c4d0 ;
+    color: #3e6840;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+.artists-pic {
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 20px 40px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: url(imgs/music_imgs/green-music.jpg);
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+    border: 2vmin dotted white;
+}
+
+.artists-pic img{
+    width: 18em;
+    border-radius: 20px;
+}
+
+.artist-name{
+    display: block;
+    font-size: 2em;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fdff7a83;
+    border: 2vmin double #e9a5b6;
+    border-radius: 25px;
+}
+
+#recommendations-section{
+    background-color: #3e6840;
+    color: #f5c4d0;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+#recommendations-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+iframe{
+    border-radius:12px
+
+}
+
+.concerts-section{
+    background-color: #f5c4d0;
+    color: #3e6840;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.concerts-scroll-area{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem ;
+    scroll-behavior: smooth;
+
+}
+
+
+.concerts-scroll-item{
+    flex: 0 0 auto;
+    width: 300px;
+    background-image: url(imgs/web_imgs/hearts-and-clover-ver.jpg);
+    border-radius: 25px;
+    overflow: hidden;
+    transition: transform .3s;
+    opacity: 0.75;
+
+    
+}
+
+.concerts-scroll-item:hover{
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+.concerts-scroll-item img{
+    width: 87%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    padding: 20px;
+    align-self: center;
+    opacity: 1;
+
+
+}
+.concerts-scroll-item p {
+    padding: 0px 10px 0px 10px ;
+    color: #3e6840;
+    background-color: #f5c4d0;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px;
+    border: 5px dashed #72c076;
+}
+.concerts-scroll-item h3{
+    background-color:#72c076 ;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px double #e9a5b6;
+}
+
+.fixed-icon {
+    position: fixed;       /* Keeps it in place while scrolling */
+    bottom: 5px;          /* Distance from bottom of the screen */
+    right: 15px;           /* Distance from right side of the screen */
+    width: 100px;           /* Icon size */
+    height: 100px;
+    cursor: pointer;
+    z-index: 1000;         /* Ensure it stays above other elements */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #3e684050;
+ 
+} 
+/* Hover effect */
+.fixed-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(1, 29, 3, 0.808);
+  
+}
+
+::-webkit-scrollbar {
+    width: 20px;              /* Width of vertical scrollbar */
+    height: 20px;             /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f5c4d0;      /* Track (background) color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ebf375;         /* Scroll handle color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3e6840;         /* Handle color on hover */
+}
+
+/* main ends here */
+
+
+
+/* .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+
+

@@ -1,0 +1,374 @@
+
+body {
+ background-color: #d6aecc;
+  background-image:url(imgs/web_imgs/heart-purple.jpg);
+ background-size: 30vmin;
+ font-family: Trebuchet MS;
+ color: rgb(235, 203, 203);
+ text-align: center;
+}
+
+
+/* header starts here */
+
+img {
+ border-radius: 75px;
+}
+
+nav{
+    background-color: rgb(175, 146, 167);
+    /* height: 30vh; */
+    border-radius: 50px;
+    padding: 0px 10px 0.5px 10px;
+    height: fit-content;
+    width: 90%;
+    position: relative;
+    left: 4%;
+    /* font-size: 2.5vmin; */
+}
+
+.home{
+
+    text-decoration: none;
+    color: #613450;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 60%;
+    position: relative;
+    background-color:white;
+    border-radius: 50px;
+    padding: 0px 0px 18px 0px;
+    top: 8px;
+    left: 20%;
+}
+
+.choco{
+   width: 4em;
+    height: 5em ;
+    position: relative;
+    margin: -70px -60px -40px 30px;
+    left: -40px;
+    top: 20px;
+
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1em solid white ;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#806351;
+    height: 5em;
+    list-style-type: none;
+    border-radius: 50px;
+
+}
+
+.sub-head {
+    color: #f7c1da;
+    background-color:rgb(114, 68, 41);
+    height: fit-content;
+    width: 12em;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.6em;
+}
+/* header ends here */
+
+/* main starts here */
+
+main{
+    font-size: 3vh;
+    color: rgb(247, 233, 215);
+    background-color: #582e43bd;
+    border-radius: 30px;
+    margin: 10px 50px 0px 50px;
+   text-align: center;
+    padding: 10px 20px 10px 20px ;
+}
+
+
+
+.fashion-main{
+
+
+    .fashion-nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        background-color: #885c7c;
+        border: 7px solid #83644f;
+        flex-wrap: wrap;
+        border-radius: 30px;
+        font-size: large;
+        color: #f7f4f3;
+        max-height: 0;
+        
+
+    }
+    .fashion-nav li{
+        margin: 5px 0;
+        padding: 5px;
+    }
+
+    .fashion-nav[data-visible="true"] {
+        max-height: 130px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+
+    }
+
+    .fashion-nav[data-visible="false"] {
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    .fashion-toggle{
+        margin: -1vw;
+    }
+    .fashion-container{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding: 1rem ;
+        scroll-behavior: smooth;
+        margin: 70px 10px;
+
+
+        .fashion-item{
+            flex: 0 0 auto;
+            width: 400px;
+            height: 500px;
+            border-radius: 25px;
+            overflow: hidden;
+            transition: transform .3s;
+            opacity: 0.75;
+
+        }
+        .fashion-item img{
+            width: 500px;
+            height: 600px;
+        }   
+        
+
+        .fashion-item:hover{
+            transform: translateY(-15px);
+            opacity: 1;
+            width: 600px;
+            transition: width 0.3s ease;
+
+            img{
+                width: 200px;
+                height: 250px;
+            }
+
+        }
+    }
+
+
+    .fashion-container img{
+        width: 300px;
+        height: 400px;
+    }
+
+
+    #fashion-loli{
+        background-color: #d6aecc;
+        background-image: url(imgs/web_imgs/hearts-and-clover-ver.jpg);
+        color: #806351;
+
+        .loli-items{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .loli-items p{
+            font-size: 18px;
+            width: 300px;
+            
+    
+        }
+        .loli-items ul{
+            margin-left: -30px;
+            list-style: none;
+            
+        }
+        .loli-items li{
+            padding-bottom: 10px;
+        }
+        .loli-items a{
+            color: #885c7c;
+        }
+    }
+
+    #fashion-gal{
+        background-color: #d6aecc;
+        background-image: url(imgs/web_imgs/hearts-and-clover-ver.jpg);
+        color: #806351;
+
+
+        .gal-items{
+            display: flex;
+            justify-content: space-evenly;
+             flex-wrap: wrap;
+        }
+
+        .gal-items p{
+            font-size: 18px;
+            width: 300px;
+    
+        }
+        .gal-items ul{
+            margin-left: -80px;
+            list-style: none;
+            width: 50px;
+            display: flex;
+            
+        }
+        .gal-items h4 {
+            margin-bottom: -12px;
+        }
+        .gal-items li{
+            padding: 8px;
+        }
+        .gal-items a{
+            color: #885c7c;
+        }
+    }
+
+
+    #fashion-hime{
+        background-color: #d6aecc;
+        background-image: url(imgs/web_imgs/hearts-and-clover-ver.jpg);
+        color: #806351;
+
+        
+
+        .hime-items{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .hime-items p{
+            font-size: 17px;
+            width: 240px;
+            margin: 10px;
+    
+        }
+        ul{
+           display: flex;
+            list-style: none;
+            margin: 20px 0px -30px  -40px; 
+            font-size: 17px;  
+        }
+        li{
+            padding: 0px 10px;
+        }
+        a{
+            color: #885c7c;
+        }
+
+    }
+
+    #fashion-mak{
+        background-color: #d6aecc;
+        background-image: url(imgs/web_imgs/hearts-and-clover-ver.jpg);
+        color: #806351;
+
+        
+        .mak-items{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .mak-items p{
+            font-size: 17px;
+            width: 300px;
+    
+        }
+        .mak-items ul{
+            margin-left: -30px;
+            list-style: none;
+            
+        }
+        .mak-items li{
+            padding-bottom: 10px;
+        }
+        .mak-items a{
+            color: #885c7c;
+        }
+
+    }
+
+}
+
+.fashion-container img{
+    width: 10px;
+}
+
+
+
+.sport-main{
+    .sport-container{
+        
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+        .sport-item{
+            display: block;
+            border: #613450 5px solid;
+            padding: 10px;
+            width: 500px;
+            max-height: fit-content;
+            margin: 10px;
+
+            a{
+                color: #f7f4f3;
+                background-color: #9e8397a8;
+                padding: 10px;
+                border-radius: 10px;
+                
+            }
+
+            img{
+                width: 30vmin;
+                display: inline;
+                border-radius: 10px;
+                
+            }
+        }
+
+        
+
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;              /* Width of vertical scrollbar */
+    height: 20px;             /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #83644f;      /* Track (background) color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #582e43bd ;         /* Scroll handle color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9e8397;         /* Handle color on hover */
+}

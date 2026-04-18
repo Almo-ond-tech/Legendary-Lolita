@@ -1,0 +1,402 @@
+
+body {
+ background-color: #ee9a69;
+ background-image:url(imgs/orange-gingham-hibicus.png);
+ background-size: 70vmin;
+ font-family: Trebuchet MS;
+ color: rgb(235, 203, 203);
+ text-align: center;
+}
+
+/* header starts here */
+
+img {
+ border-radius: 75px;
+}
+
+nav{
+    background-color: rgb(250, 147, 99);
+    /* height: 30vh; */
+    border-radius: 50px;
+    padding: 0px 10px 0.5px 10px;
+    height: fit-content;
+    width: 90%;
+    position: relative;
+    left: 4%;
+    font-size: 1em;
+}
+
+.home{
+
+    text-decoration: none;
+    color: #ee857e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 60%;
+    position: relative;
+    background-color:white;
+    border-radius: 50px;
+    padding: 0px 0px 18px 0px;
+    top: 8px;
+    left: 20%;
+}
+
+.flower{
+    width: 3em;
+    height: 6em ;
+    position: relative;
+    margin: -80px -50px -70px 10px;
+    top: 30px;
+    right: 30px;
+    transform: rotate(60deg);
+
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1em solid white ;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#f1be5e;
+    height: 5em;
+    list-style-type: none;
+    border-radius: 50px;
+
+}
+
+.sub-head {
+    color: #a1290a;
+    background-color:rgb(243, 238, 166);
+    height: fit-content;
+    width: 12em;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.6em;
+}
+/* header ends here */
+
+/* main starts here */
+
+main{
+    font-size: 3vmin;
+    color: rgb(247, 233, 215);
+    background-color: #e0a455d0;
+    border-radius: 30px;
+    margin: 10px 50px 0px 50px;
+   text-align: center;
+    padding: 10px 20px 10px 20px ;
+}
+
+.sefi-main{
+    background-color: rgb(250, 147, 99);
+    border-radius: 25px;
+    margin: 0px  1% 0px 1%;
+    background-image: url(imgs/sefi-bg-removebg.png);
+    background-size: contain;
+    color: #b84427;
+    
+}
+
+.sefi-toggle{
+    position: relative;
+    margin: 15px 10% -10px 0px;
+}
+ 
+
+.sefi-nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    align-items: center;
+    list-style-type: none;
+    background-color: #da553471;
+    border: 5px solid #f57761;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    font-size: large;
+    margin: 0px 20px;
+    color: #f7f4f3;
+    max-height: 0;
+}
+
+.sefi-nav[data-visible="true"] {
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 10px;
+    
+}
+.sefi-nav[data-visible="false"] {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.sefi-1{
+    /* outline: 5px solid #a1290a; */
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+    display: block;
+}
+
+.sefi-1[data-visible="false"]{
+    display: none;
+
+}
+
+.sefi-1 h3{
+    display: block;
+    border: 5px #ec6f6f double ;
+    height: fit-content;
+    padding: 10px;
+    color: #ec6f6f;
+
+}
+
+
+.cw{
+    background-color: #faaa96;
+    border-radius: 25px;
+    margin: 5px 10px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem ;
+    scroll-behavior: smooth;
+    height: 70vh;
+}
+
+.sefi-2{
+    /* outline: 5px solid #a7776b; */
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+    display: none;
+}
+
+.sefi-2[data-visible="true"]{
+    display: block;
+}
+
+.sefi-2 h3{
+    border: 5px #5da74b double ;
+    height: fit-content;
+    padding: 10px;
+    color: #5da74b;
+
+}
+.rec{
+    background-color: #5da74b;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem ;
+    scroll-behavior: smooth;
+    height: 70vh;
+}
+
+.sefi-item{
+    background-color: #eec475;
+    border-radius: 25px;
+    flex: 0 0 auto;
+    border-radius: 25px;
+    overflow: hidden;
+    background-image: url(imgs/gradient-dots.jpg);
+    background-size: 300px;
+    width: 300px;
+    height: fit-content;
+    opacity: 0.75;
+
+    
+    
+    
+}
+.sefi-item:hover{            
+    transform: translateY(-15px);
+    opacity: 1;
+    width: 450px;
+    transition: width 0.3s ease; 
+    
+    
+    img{
+
+        width: 100%;
+        object-fit: scale-down;
+        display: block;
+        padding: 20px;
+        align-self: center;
+
+    }       
+}
+
+.sefi-item p{
+    margin: 30px;
+}
+.sefi-item img{
+
+    width: 87%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    padding: 20px;
+    align-self: center;
+    margin: -30px 0px;
+
+}
+
+/* webtoon starts here */
+
+.web-main{
+    background-size: contain;
+    background-image: url(imgs/pink-dots.jpg);
+    border-radius: 25px;
+    margin: 0px  1% 0px 1%;
+    color: #0aa149;
+    
+}
+
+.web-toggle{
+    position: relative;
+    margin: 15px 10% -10px 0px;
+}
+ 
+.web-nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    align-items: center;
+    list-style-type: none;
+    background-color: #6bf167a2;
+    border: 5px solid #5da74b;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    font-size: large;
+    margin: 0px 20px;
+    color: #f7f4f3;
+    max-height: 0;
+
+}
+
+.web-nav[data-visible="true"] {
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 10px;
+
+}
+
+.web-nav[data-visible="false"] {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.web-1{
+    /* outline: 5px solid #a1290a; */
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}
+
+.web-1[data-visible="false"]{
+    display: none;
+
+}
+
+
+.web-1 h3{
+    display: block;
+    border: 5px #ec6f6f double ;
+    height: fit-content;
+    padding: 10px;
+    color: #ec6f6f;
+
+}
+
+.web-2{
+    /* outline: 5px solid #a7776b; */
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+    display: none;
+}
+
+.web-2[data-visible="true"]{
+    display: block;
+}
+
+.web-2 h3{
+    border: 5px #5da74b double ;
+    height: fit-content;
+    padding: 10px;
+    color: #5da74b;
+
+}
+
+.web-item{
+    border-radius: 25px;
+    flex: 0 0 auto;
+    border-radius: 25px;
+    overflow: hidden;
+    background-image: url(imgs/gradient-dots.jpg);
+    background-size: 300px;
+    width: 300px;
+    height: fit-content;
+    opacity: 0.75;
+
+}
+.web-item:hover{            
+    transform: translateY(-15px);
+    opacity: 1;
+    width: 450px;
+    transition: width 0.3s ease; 
+    
+    img{
+
+        width: 100%;
+        object-fit: scale-down;
+        display: block;
+        padding: 20px;
+        align-self: center;
+
+    }       
+}
+.web-item p{
+    margin: 30px;
+}
+
+.web-item img{
+
+    width: 87%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    padding: 20px;
+    align-self: center;
+    margin: -20px 0px;
+
+}
+
+::-webkit-scrollbar {
+    width: 20px;              /* Width of vertical scrollbar */
+    height: 20px;             /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #5da74b;      /* Track (background) color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ee9a69 ;         /* Scroll handle color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ebf375;         /* Handle color on hover */
+}
